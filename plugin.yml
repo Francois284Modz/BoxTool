@@ -1,10 +1,10 @@
 name: BoxTool
-author: Francois284/HuaYoyu
-api:  2.0.0
-version: Soon
-description: "A tool box plugin for your server"
 main: BoxTool/plugin
-website:
+version: INDEV
+api: 2.0.0
+author: Francois284/HuaYoyu
+description: "A tool box plugin for your server"
+website: "https://github.com/YoungRichNigger9/BoxTool"
 commands:
     bthelp:
         usage: /bthelp
