@@ -1,36 +1,36 @@
 name: BoxTool
-author: Francois284/Yoyu666
+author: Francois284/HuaYoyu
 api:  2.0.0
 version: Soon
 description: "A tool box plugin for your server"
 main: BoxTool/plugin
 website:
 commands:
-    gmhelp:
+    bthelp:
         usage: /bthelp
         description: Shows BoxTool Command list
-    gms:
+    gs:
         usage: /gs
         description: Changes gamemode to Survival 
-    gmc:
+    gc:
         usage: /gc
         description: Changes gamemode to Creative
-    gma:
+    ga:
         usage: /ga
         description: Changes gamemode to Adventure
-    gmsp:
+    gsp:
         usage: /gsp
         description: Changes gamemode to Spectator
 permissions:
-    gamemodeez.gms:
+    boxtool.gs:
         default: op
         description: Allows use of /gs
-    gamemodeez.gmc:
+    boxtool.gc:
         default: op
         description: Allows use of /gc
-    gamemodeez.gma:
+    boxtool.ga:
         default: op
         description: Allows use of /ga
-    gamemodeez.gmsp:
+    boxtool.gsp:
         default: op
         description: Allows use of /gsp
