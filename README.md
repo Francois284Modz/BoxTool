@@ -17,5 +17,5 @@ GameModeEZ plugin for MCPE server
      This program is free software: you allow recode it,
      Hope that it will be useful for u server,
      Enjoy and Have FUN!!
-     This plugins is starter from 13July2016.
+     This plugins is starter from 13 July 2016.
 ```
