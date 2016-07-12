@@ -23,7 +23,7 @@ BoxTool plugin for Your MCPE server.
 ```
 
 ###Download Link & Installation.
-* LastVersion: N/a
-* You can Tap [HERE](404) to download this Plugins!
+* LastVersion: Build_1
+* You can Tap [Here](404) to download this Plugins!
 - Drop the correct WorldEditor version into the MCPEServerApp's `plugins/` folder.
 - Restart the server,and then theplugin will be loaded :D!or have crash/issuse pls tap [Here](https://github.com/YoungRichNigger9/BoxTool/issues) for rebord the issuses.
