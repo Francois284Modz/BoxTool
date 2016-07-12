@@ -12,10 +12,10 @@
 
 ```
 GameModeEZ plugin for MCPE server
-     Copyright © 2016 YoungRichNigger 9& HuaYoyu
+     Copyright © 2016 YoungRichNigger & HuaYoyu
 
      This program is free software: you allow recode it,
      Hope that it will be useful for u server,
      Enjoy and Have FUN!!
-     This plugins is starter from 13Jun2016.
+     This plugins is starter from 13July2016.
 ```
