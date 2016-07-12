@@ -1,5 +1,6 @@
 #BoxTool
 //info pls can u write this?
+- NOTE: The plugins is INDEV now.
 
 ##Features
 | Commands | change |
@@ -23,6 +24,6 @@ BoxTool plugin for Your MCPE server.
 ###Download Link & Installation.
 * CurrentVersion: N/a
 * OlderVersion : N/a
-You can Tap [HERE](404XD)to download this Plugins!
+* You can Tap [HERE](404)to download this Plugins!
 - Drop the correct WorldEditor version into the MCPEServerApp's `plugins/` folder.
 - Restart the server. The plugin will be loaded :D!
