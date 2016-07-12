@@ -36,17 +36,17 @@ class plugin extends PluginBase{
 		$cmd = strtolower($cmd->getName());
 		$count = count($args);
 		switch ($cmd){
-			case "gmhelp":
+			case "bthelp":
 				$player = $this->getServer()->getPlayer($sender->getName());
 						$sender->sendMessage(Colour::BLACK. "---[".Colour::DARK_PURPLE."BoxTool Indev".Colour::BLACK."]---");
-						$sender->sendMessage(Colour::BLACK. "- " .Colour::WHITE."/gmhelp".Colour::GREEN." Shows plugin help");
-						$sender->sendMessage(Colour::BLACK. "- " .Colour::WHITE."/gms".Colour::GREEN." Changes gamemode to Survival");
-						$sender->sendMessage(Colour::BLACK. "- " .Colour::WHITE."/gmc".Colour::GREEN." Changes gamemode to Creative");
-						$sender->sendMessage(Colour::BLACK. "- " .Colour::WHITE."/gma".Colour::GREEN." Changes gamemode to Adventure");
-						$sender->sendMessage(Colour::BLACK. "- " .Colour::WHITE."/gmsp".Colour::GREEN." Changes gamemode to Spectator");
+						$sender->sendMessage(Colour::BLACK. "- " .Colour::WHITE."/bthelp".Colour::GREEN." Shows plugin help");
+						$sender->sendMessage(Colour::BLACK. "- " .Colour::WHITE."/gs".Colour::GREEN." Changes gamemode to Survival");
+						$sender->sendMessage(Colour::BLACK. "- " .Colour::WHITE."/gc".Colour::GREEN." Changes gamemode to Creative");
+						$sender->sendMessage(Colour::BLACK. "- " .Colour::WHITE."/ga".Colour::GREEN." Changes gamemode to Adventure");
+						$sender->sendMessage(Colour::BLACK. "- " .Colour::WHITE."/gsp".Colour::GREEN." Changes gamemode to Spectator");
 						return true;
 						
-			case "gms":
+			case "gs":
 				if (!($sender instanceof Player)){
 				$sender->sendMessage(Colour::DARK_RED."This command can only be executed in-game");
 				return true;
