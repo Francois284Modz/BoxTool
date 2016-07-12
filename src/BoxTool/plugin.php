@@ -38,7 +38,7 @@ class plugin extends PluginBase{
 		switch ($cmd){
 			case "bthelp":
 				$player = $this->getServer()->getPlayer($sender->getName());
-						$sender->sendMessage(Colour::BLACK. "---[".Colour::DARK_PURPLE."BoxTool Indev".Colour::BLACK."]---");
+						$sender->sendMessage(Colour::BLACK. "---[".Colour::DARK_PURPLE."BoxTool Help".Colour::BLACK."]---");
 						$sender->sendMessage(Colour::BLACK. "- " .Colour::WHITE."/bthelp".Colour::GREEN." Shows plugin help");
 						$sender->sendMessage(Colour::BLACK. "- " .Colour::WHITE."/gs".Colour::GREEN." Changes gamemode to Survival");
 						$sender->sendMessage(Colour::BLACK. "- " .Colour::WHITE."/gc".Colour::GREEN." Changes gamemode to Creative");
@@ -62,5 +62,74 @@ class plugin extends PluginBase{
 							$this->getServer()->broadcastPopup(Colour::WHITE."$name".Colour::DARK_GREEN."Changed Gamemode");
 							}
 							return true;
+							break;
+			case "gc":
+				if (!($sender instanceof Player)){
+				$sender->sendMessage(Colour::DARK_RED."This command can only be executed in-game");
+				return true;
+				}
+					$player = $this->getServer()->getPlayer($sender->getName());
+					if ($player->hasPermission("boxtool.gc")){
+					if ($player->getGamemode() == 1){
+					$player->sendMessage(Colour::DARK_RED."You are already in Creative");
+						} else {
+							$player->setGamemode(1);
+							$player->sendMessage("You are now in Creative");
+							$name = $player->getName();
+							$this->getServer()->broadcastPopup(Colour::WHITE."$name".Colour::DARK_GREEN." Changed Gamemode");
+							}
+							return true;
+								} else {
+									$player->sendMessage(Colour::DARK_RED."You do not have permission to run this command!");
+									return true;
+									}
+									break;
+			case "ga":
+				if (!($sender instanceof Player)){
+				$sender->sendMessage(Colour::DARK_RED."This command can only be executed in-game");
+				return true;
+				}
+					$player = $this->getServer()->getPlayer($sender->getName());
+					if ($player->hasPermission("boxtool.ga")){
+					if ($player->getGamemode() == 2){
+					$player->sendMessage(Colour::DARK_RED."You are already in Adventure mode");
+						} else {
+							$player->setGamemode(2);
+							$player->sendMessage("You are now in Adventure mode");
+							$name = $player->getName();
+							$this->getServer()->broadcastPopup(Colour::WHITE."$name".Colour::DARK_GREEN." Just Changed Gamemode");
+							}
+							return true;
+								} else {
+									$player->sendMessage(Colour::DARK_RED."You do not have permission to run this command!");
+									return true;
+									}
+									break;
+			case "gsp":
+				if (!($sender instanceof Player)){
+				$sender->sendMessage(Colour::DARK_RED."This command can only be executed in-game");
+				return true;
+				}
+					$player = $this->getServer()->getPlayer($sender->getName());
+					if ($player->hasPermission("boxtool.gsp")){
+					if ($player->getGamemode() == 3){
+					$player->sendMessage(Colour::DARK_RED."You are already in Spectator mode");
+						} else {
+							$player->setGamemode(3);
+							$player->sendMessage("You are now in Spectator mode");
+							$name = $player->getName();
+							$this->getServer()->broadcastPopup(Colour::WHITE."$name".Colour::DARK_GREEN."Changed Gamemode");
+							}
+							return true;
+								} else {
+									$player->sendMessage(Colour::DARK_RED."You do not have permission to run this command!");
+									return true;
+									}
+									break;
+										}
+		return true;
+	}
+}
+
 		
 }
