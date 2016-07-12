@@ -3,6 +3,7 @@ main: BoxTool/plugin
 version: INDEV
 api: 2.0.0
 author: Francois284/HuaYoyu
+load: "STARTUP"
 description: "A tool box plugin for your server"
 website: "https://github.com/YoungRichNigger9/BoxTool"
 commands:
