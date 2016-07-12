@@ -1,6 +1,6 @@
 name: BoxTool
 main: BoxTool/plugin
-version: INDEV
+version: Build_1
 api: 2.0.0
 author: Francois284/HuaYoyu
 load: "STARTUP"
