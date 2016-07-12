@@ -1,7 +1,7 @@
 #BoxTool
 Is one of the plugins that servers admin must have on ther server with a lot of features that will be inpliment. This plugin is multi-systeme. That mean with only this plugin you will have all you need for you Minecraft Pocket Edition Server 
 
-  Requirement:
+      Requirement:
      -Minecraft Pocket Edition Server version 0.15.x
      -The plugin is compatible with Genisys,PocketMine,Imagicalmine server
      - Note : The plugins is still in developpement
