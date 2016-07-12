@@ -4,3 +4,33 @@ api:  2.0.0
 version: 0.1
 description: "A tool box plugin for your server"
 main: BoxTool/plugin
+website:
+commands:
+    gmhelp:
+        usage: /bthelp
+        description: Shows BoxTool Command list
+    gms:
+        usage: /gs
+        description: Changes gamemode to Survival 
+    gmc:
+        usage: /gc
+        description: Changes gamemode to Creative
+    gma:
+        usage: /ga
+        description: Changes gamemode to Adventure
+    gmsp:
+        usage: /gsp
+        description: Changes gamemode to Spectator
+permissions:
+    gamemodeez.gms:
+        default: op
+        description: Allows use of /gs
+    gamemodeez.gmc:
+        default: op
+        description: Allows use of /gc
+    gamemodeez.gma:
+        default: op
+        description: Allows use of /ga
+    gamemodeez.gmsp:
+        default: op
+        description: Allows use of /gsp
