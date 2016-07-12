@@ -15,7 +15,7 @@ use pocketmine\utils\TextFormat;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 
-class Main extends PluginBase{
+class plugin extends PluginBase{
 
           public function onLoad(){
                     $this->getLogger()->info(TextFormat::BLUE."BoxTool is  Loading");
