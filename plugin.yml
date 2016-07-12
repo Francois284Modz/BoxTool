@@ -1,8 +1,8 @@
 name: BoxTool
-main: BoxTool/plugin
+main: YoungRichNigger9\BoxTool\Main
 version: Build_1
 api: 2.0.0
-author: Francois284/HuaYoyu
+author: YoungRichNigger9/HuaYoyu
 load: "STARTUP"
 description: "A tool box plugin for your server"
 website: "https://github.com/YoungRichNigger9/BoxTool"
