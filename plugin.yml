@@ -24,13 +24,13 @@ commands:
 permissions:
     boxtool.gs:
         default: op
-        description: Allows use of /gs
+        description: Allows user to use /gs
     boxtool.gc:
         default: op
-        description: Allows use of /gc
+        description: Allows user to use /gc
     boxtool.ga:
         default: op
-        description: Allows use of /ga
+        description: Allows user to use /ga
     boxtool.gsp:
         default: op
-        description: Allows use of /gsp
+        description: Allows user to use /gsp
