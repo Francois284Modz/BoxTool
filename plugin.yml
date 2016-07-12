@@ -1,7 +1,7 @@
 name: BoxTool
 author: Francois284/Yoyu666
 api:  2.0.0
-version: 0.1
+version: Soon
 description: "A tool box plugin for your server"
 main: BoxTool/plugin
 website:
