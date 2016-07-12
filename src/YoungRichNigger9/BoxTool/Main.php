@@ -5,37 +5,69 @@
 //This program is free software: you allow recode it,
 //Hope that it will be useful for u server,
      
-namespace BoxTool\plugin;
+namespace YoungRichNigger9\BoxTool;
 
 use pocketmine\plugin\PluginBase;
-use pocketmine\Player;
-use pocketmine\Server;
-use pocketmine\event\Listener;
-use pocketmine\utils\TextFormat;
+use pocketmine\utils\TextFormat as Colour;
+use pocketmine\event\player\PlayerJoinEvent;
+use pocketmine\event\player\PlayerQuitEvent;
+use pocketmine\event\player\PlayerGameModeChangeEvent;
+use pocketmine\event\player\PlayerDeathEvent;
+use pocketmine\event\player\PlayerCreationEvent;
+use pocketmine\event\player\PlayerKickEvent;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
+use pocketmine\command\CommandExecutor;
+use pocketmine\command\PluginCommand;
 use pocketmine\permission\Permission;
 use pocketmine\Player;
 use pocketmine\Server;
 use pocketmine\event\Listener;
-use pocketmine\event\player\PlayerGameModeChangeEvent;
-use pocketmine\utils\TextFormat as Colour;
 
-class plugin extends PluginBase{
+class Main extends PluginBase implements Listener{
 
-          public function onLoad(){
-                    $this->getLogger()->info(TextFormat::BLUE."BoxTool is  Loading");
-          }
-          public function onEnable(){
-                    $this->getLogger()->info(TextFormat::GREEN."BoxTool as Enabled");
-          }
-          public function onDisable(){
-                    $this->getLogger()->info(TextFormat:: RED."BoxTool as Disabled");
-          }
-          	public function onCommand(CommandSender $sender,Command $cmd,$label,array $args){
+	public function onEnable(){
+		$this->getServer()->getPluginManager()->registerEvents($this, $this);
+		$this->getLogger()->info(Colour::GREEN."BoxTool Enabled!");
+		return;
+	}
+	public function onDisable(){
+		$this->getLogger()->info(Colour::DARK_RED."BoxTool Disabled!");
+	}
+
+//Events
+	public function onJoin(PlayerJoinEvent $event){
+		$player = $event->getPlayer();
+		$name = $player->getName();
+		$player->sendTip(Colour::AQUA."Welcome,".Colour::WHITE." $name");
+		$this->getServer()->broadcastPopup(Colour::WHITE."$name".Colour::AQUA." Joined the Server");
+	}
+	public function onQuit(PlayerQuitEvent $event){
+		$player = $event->getPlayer();
+		$name = $player->getName();
+		$this->getServer()->broadcastPopup(Colour::WHITE."$name".Colour::DARK_RED." Left the Server");
+	}
+	public function onKick(PlayerKickEvent $event){
+		$player = $event->getPlayer();
+		$name = $player->getName();
+		$this->getServer()->broadcastPopup(Colour::WHITE."$name".Colour::DARK_RED." Got Kicked");
+	}
+	public function onGameModeChange(PlayerGameModeChangeEvent $event){
+		$player = $event->getPlayer();
+		$name = $player->getName();
+		$this->getServer()->broadcastPopup(Colour::WHITE."$name".Colour::DARK_GREEN." ChangedGamemode");
+	}
+	public function onDeath(PlayerDeathEvent $event){
+		$player = $event->getEntity();
+		$name = $player->getName();
+		$this->getServer()->broadcastPopup(Colour::WHITE."$name".Colour::DARK_RED." Died so Sad");
+	}
+//Commands
+	public function onCommand(CommandSender $sender,Command $cmd,$label,array $args){
 		$cmd = strtolower($cmd->getName());
 		$count = count($args);
 		switch ($cmd){
+
 			case "bthelp":
 				$player = $this->getServer()->getPlayer($sender->getName());
 						$sender->sendMessage(Colour::BLACK. "---[".Colour::DARK_PURPLE."BoxTool Help".Colour::BLACK."]---");
@@ -45,7 +77,7 @@ class plugin extends PluginBase{
 						$sender->sendMessage(Colour::BLACK. "- " .Colour::WHITE."/ga".Colour::GREEN." Changes gamemode to Adventure");
 						$sender->sendMessage(Colour::BLACK. "- " .Colour::WHITE."/gsp".Colour::GREEN." Changes gamemode to Spectator");
 						return true;
-						
+						break;
 			case "gs":
 				if (!($sender instanceof Player)){
 				$sender->sendMessage(Colour::DARK_RED."This command can only be executed in-game");
@@ -59,10 +91,14 @@ class plugin extends PluginBase{
 							$player->setGamemode(0);
 							$player->sendMessage("You are now in Survival");
 							$name = $player->getName();
-							$this->getServer()->broadcastPopup(Colour::WHITE."$name".Colour::DARK_GREEN."Changed Gamemode");
+							$this->getServer()->broadcastPopup(Colour::WHITE."$name".Colour::DARK_GREEN."  Changed Gamemode");
 							}
 							return true;
-							break;
+								} else {
+									$player->sendMessage(Colour::DARK_RED."You do not have permission to run this command!");
+									return true;
+									}
+									break;
 			case "gc":
 				if (!($sender instanceof Player)){
 				$sender->sendMessage(Colour::DARK_RED."This command can only be executed in-game");
@@ -97,7 +133,7 @@ class plugin extends PluginBase{
 							$player->setGamemode(2);
 							$player->sendMessage("You are now in Adventure mode");
 							$name = $player->getName();
-							$this->getServer()->broadcastPopup(Colour::WHITE."$name".Colour::DARK_GREEN." Just Changed Gamemode");
+							$this->getServer()->broadcastPopup(Colour::WHITE."$name".Colour::DARK_GREEN." Changed Gamemode");
 							}
 							return true;
 								} else {
@@ -129,7 +165,4 @@ class plugin extends PluginBase{
 										}
 		return true;
 	}
-}
-
-		
 }
