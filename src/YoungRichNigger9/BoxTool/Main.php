@@ -72,10 +72,10 @@ class Main extends PluginBase implements Listener{
 				$player = $this->getServer()->getPlayer($sender->getName());
 						$sender->sendMessage(Colour::YELLOW. "---[".Colour::DARK_PURPLE."BoxTool Help".Colour::YELLOW."]---");
 						$sender->sendMessage(Colour::YELLOW. "- " .Colour::WHITE."/bthelp".Colour::GREEN." Shows plugin help");
-						$sender->sendMessage(Colour::YELLOW. "- " .Colour::WHITE."/gs".Colour::GREEN." Changes gamemode to Survival");
-						$sender->sendMessage(Colour::YELLOW. "- " .Colour::WHITE."/gc".Colour::GREEN." Changes gamemode to Creative");
-						$sender->sendMessage(Colour::YELLOW. "- " .Colour::WHITE."/ga".Colour::GREEN." Changes gamemode to Adventure");
-						$sender->sendMessage(Colour::YELLOW. "- " .Colour::WHITE."/gsp".Colour::GREEN." Changes gamemode to Spectator");
+						$sender->sendMessage(Colour::YELLOW. "- " .Colour::WHITE."/gms".Colour::GREEN." Changes gamemode to Survival");
+						$sender->sendMessage(Colour::YELLOW. "- " .Colour::WHITE."/gmc".Colour::GREEN." Changes gamemode to Creative");
+						$sender->sendMessage(Colour::YELLOW. "- " .Colour::WHITE."/gma".Colour::GREEN." Changes gamemode to Adventure");
+						$sender->sendMessage(Colour::YELLOW. "- " .Colour::WHITE."/gmsp".Colour::GREEN." Changes gamemode to Spectator");
 						return true;
 						break;
 			case "gms":
