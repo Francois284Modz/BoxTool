@@ -17,6 +17,7 @@ Is one of the plugins that servers admin must have on ther server with a lot of 
 | /gc | change to Creative mode |
 | /ga | change to Adventure mode |
 | /gsp | change to Spectator mode |
+| /afk | Inpdev |
 
 ###Note:
 ```
