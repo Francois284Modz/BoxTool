@@ -10,28 +10,28 @@ commands:
     bthelp:
         usage: /bthelp
         description: Shows BoxTool Command list
-    gs:
-        usage: /gs
+    gms:
+        usage: /gms
         description: Changes gamemode to Survival 
-    gc:
-        usage: /gc
+    gmc:
+        usage: /gmc
         description: Changes gamemode to Creative
-    ga:
-        usage: /ga
+    gma:
+        usage: /gma
         description: Changes gamemode to Adventure
-    gsp:
-        usage: /gsp
+    gmsp:
+        usage: /gmsp
         description: Changes gamemode to Spectator
 permissions:
-    boxtool.gs:
+    boxtool.gms:
         default: op
         description: Allows user to use /gs
-    boxtool.gc:
+    boxtool.gmc:
         default: op
         description: Allows user to use /gc
-    boxtool.ga:
+    boxtool.gma:
         default: op
         description: Allows user to use /ga
-    boxtool.gsp:
+    boxtool.gmsp:
         default: op
         description: Allows user to use /gsp
