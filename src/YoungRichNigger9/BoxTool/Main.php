@@ -70,21 +70,21 @@ class Main extends PluginBase implements Listener{
 
 			case "bthelp":
 				$player = $this->getServer()->getPlayer($sender->getName());
-						$sender->sendMessage(Colour::BLACK. "---[".Colour::DARK_PURPLE."BoxTool Help".Colour::BLACK."]---");
-						$sender->sendMessage(Colour::BLACK. "- " .Colour::WHITE."/bthelp".Colour::GREEN." Shows plugin help");
-						$sender->sendMessage(Colour::BLACK. "- " .Colour::WHITE."/gs".Colour::GREEN." Changes gamemode to Survival");
-						$sender->sendMessage(Colour::BLACK. "- " .Colour::WHITE."/gc".Colour::GREEN." Changes gamemode to Creative");
-						$sender->sendMessage(Colour::BLACK. "- " .Colour::WHITE."/ga".Colour::GREEN." Changes gamemode to Adventure");
-						$sender->sendMessage(Colour::BLACK. "- " .Colour::WHITE."/gsp".Colour::GREEN." Changes gamemode to Spectator");
+						$sender->sendMessage(Colour::YELLOW. "---[".Colour::DARK_PURPLE."BoxTool Help".Colour::YELLOW."]---");
+						$sender->sendMessage(Colour::YELLOW. "- " .Colour::WHITE."/bthelp".Colour::GREEN." Shows plugin help");
+						$sender->sendMessage(Colour::YELLOW. "- " .Colour::WHITE."/gs".Colour::GREEN." Changes gamemode to Survival");
+						$sender->sendMessage(Colour::YELLOW. "- " .Colour::WHITE."/gc".Colour::GREEN." Changes gamemode to Creative");
+						$sender->sendMessage(Colour::YELLOW. "- " .Colour::WHITE."/ga".Colour::GREEN." Changes gamemode to Adventure");
+						$sender->sendMessage(Colour::YELLOW. "- " .Colour::WHITE."/gsp".Colour::GREEN." Changes gamemode to Spectator");
 						return true;
 						break;
-			case "gs":
+			case "gms":
 				if (!($sender instanceof Player)){
 				$sender->sendMessage(Colour::DARK_RED."This command can only be executed in-game");
 				return true;
 				}
 					$player = $this->getServer()->getPlayer($sender->getName());
-					if ($player->hasPermission("boxtool.gs")){
+					if ($player->hasPermission("boxtool.gms")){
 					if ($player->getGamemode() == 0){
 					$player->sendMessage("You are already in Survival");
 						} else {
@@ -99,13 +99,13 @@ class Main extends PluginBase implements Listener{
 									return true;
 									}
 									break;
-			case "gc":
+			case "gmc":
 				if (!($sender instanceof Player)){
 				$sender->sendMessage(Colour::DARK_RED."This command can only be executed in-game");
 				return true;
 				}
 					$player = $this->getServer()->getPlayer($sender->getName());
-					if ($player->hasPermission("boxtool.gc")){
+					if ($player->hasPermission("boxtool.gmc")){
 					if ($player->getGamemode() == 1){
 					$player->sendMessage(Colour::DARK_RED."You are already in Creative");
 						} else {
@@ -120,13 +120,13 @@ class Main extends PluginBase implements Listener{
 									return true;
 									}
 									break;
-			case "ga":
+			case "gma":
 				if (!($sender instanceof Player)){
 				$sender->sendMessage(Colour::DARK_RED."This command can only be executed in-game");
 				return true;
 				}
 					$player = $this->getServer()->getPlayer($sender->getName());
-					if ($player->hasPermission("boxtool.ga")){
+					if ($player->hasPermission("boxtool.gma")){
 					if ($player->getGamemode() == 2){
 					$player->sendMessage(Colour::DARK_RED."You are already in Adventure mode");
 						} else {
@@ -141,13 +141,13 @@ class Main extends PluginBase implements Listener{
 									return true;
 									}
 									break;
-			case "gsp":
+			case "gmsp":
 				if (!($sender instanceof Player)){
 				$sender->sendMessage(Colour::DARK_RED."This command can only be executed in-game");
 				return true;
 				}
 					$player = $this->getServer()->getPlayer($sender->getName());
-					if ($player->hasPermission("boxtool.gsp")){
+					if ($player->hasPermission("boxtool.gmsp")){
 					if ($player->getGamemode() == 3){
 					$player->sendMessage(Colour::DARK_RED."You are already in Spectator mode");
 						} else {
