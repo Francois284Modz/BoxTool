@@ -10,14 +10,20 @@ Is one of the plugins that servers admin must have on ther server with a lot of 
 - Having crash/issuse please report bugs tap [Here](https://github.com/YoungRichNigger9/BoxTool/issues).
 
 ##Features:
-| Commands | change |
+| Commands | info |
 | :---: | :---: |
 | /bthelp | show BoxTool command list |
 | /gs | change to Survival mode |
 | /gc | change to Creative mode |
 | /ga | change to Adventure mode |
 | /gsp | change to Spectator mode |
-| /afk | Inpdev |
+| /fly | Lets Player Fly at Survival and Adventure |
+
+#Planned Features:
+- [] /fly
+- [] /afk
+- [] /nick
+- etc.
 
 ###Note:
 ```
