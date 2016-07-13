@@ -2,8 +2,9 @@
 Is one of the plugins that servers admin must have on ther server with a lot of features that will be inpliment. This plugin is multi-systeme. That mean with only this plugin you will have all you need for you Minecraft Pocket Edition Server 
 
       Requirement:
-     * Suppot Minecraft:PE Server version 0.15.x
+     * Suppot Minecraft:PE Server version 0.15.X
      * The plugin is compatible with Genisys.
+     * Full of php7 suppot & run API 2.0.0!
 
 ###Help Rebort Bug
 - Having crash/issuse please report bugs tap [Here](https://github.com/YoungRichNigger9/BoxTool/issues).
