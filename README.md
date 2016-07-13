@@ -4,7 +4,7 @@ Is one of the plugins that servers admin must have on ther server with a lot of 
       Requirement:
      * Suppot Minecraft:PE Server version 0.15.X
      * The plugin is compatible with Genisys.
-     * Full of php7 suppot & run API 2.0.0!
+     * Full of php7 support & run API 2.0.0!
 
 ###Help Rebort Bug
 - Having crash/issuse please report bugs tap [Here](https://github.com/YoungRichNigger9/BoxTool/issues).
