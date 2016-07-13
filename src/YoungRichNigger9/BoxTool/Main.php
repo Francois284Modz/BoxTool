@@ -178,6 +178,7 @@ class Main extends PluginBase implements Listener{
 										}
 		return true;
 	}
+}
 class fly extends Loader implements CommandExecutor{
 
     public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
