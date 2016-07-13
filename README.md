@@ -6,7 +6,7 @@ Is one of the plugins that servers admin must have on ther server with a lot of 
      * The plugin is compatible with Genisys.
      * Note : - Having crash/issuse please report bugs here tap [Here](https://github.com/YoungRichNigger9/BoxTool/issues).
 
-##Features
+##Features:
 | Commands | change |
 | :---: | :---: |
 | /bthelp | show BoxTool command list |
@@ -15,7 +15,7 @@ Is one of the plugins that servers admin must have on ther server with a lot of 
 | /ga | change to Adventure mode |
 | /gsp | change to Spectator mode |
 
-###Note
+###Note:
 ```
 BoxTool plugin for Your MCPE server.
      Copyright © 2016 YoungRichNigger & HuaYoyu
