@@ -7,6 +7,9 @@ load: "STARTUP"
 description: "A tool box plugin for your server"
 website: "https://github.com/YoungRichNigger9/BoxTool"
 commands:
+    afk:
+        usage: /afk
+        deacription: afk it!
     bthelp:
         usage: /bthelp
         description: Shows BoxTool Command list
@@ -23,6 +26,9 @@ commands:
         usage: /gmsp
         description: Changes gamemode to Spectator
 permissions:
+    boxtool.afk:
+        default: false
+        description: Allows user to use /afk
     boxtool.gms:
         default: op
         description: Allows user to use /gms
