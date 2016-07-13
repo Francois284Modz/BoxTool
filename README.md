@@ -32,5 +32,5 @@ BoxTool plugin for Your MCPE server.
 * LastVersion: 0.2
 * You can use our [Gitlab](https://gitlab.com/YoungRichNigger9/BoxTool/blob/master/BoxTool_vBuild_1.phar) or to download this Plugins!
 * You also can go [Here](https://github.com/YoungRichNigger9/BoxTool/releases) to download this plugins. [100%FastUpdate!]
-- Drop the BoxTool plugin latest version into the MCPEServerApp's/plugins' folder. 
+- Drop the BoxTool plugin latest version into the MCPEServerApp '/plugins' folder. 
 - Restart the server,and then the plugin will be loaded :D! 
