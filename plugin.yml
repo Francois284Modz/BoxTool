@@ -25,13 +25,13 @@ commands:
 permissions:
     boxtool.gms:
         default: op
-        description: Allows user to use /gs
+        description: Allows user to use /gms
     boxtool.gmc:
         default: op
-        description: Allows user to use /gc
+        description: Allows user to use /gmc
     boxtool.gma:
         default: op
-        description: Allows user to use /ga
+        description: Allows user to use /gma
     boxtool.gmsp:
         default: op
-        description: Allows user to use /gsp
+        description: Allows user to use /gmsp
