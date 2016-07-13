@@ -6,7 +6,7 @@ Is one of the plugins that servers admin must have on ther server with a lot of 
      * The plugin is compatible with Genisys.
 
 ###Help Rebort Bug
-- Having crash/issuse please report bugs here tap [Here](https://github.com/YoungRichNigger9/BoxTool/issues).
+- Having crash/issuse please report bugs tap [Here](https://github.com/YoungRichNigger9/BoxTool/issues).
 
 ##Features:
 | Commands | change |
@@ -20,7 +20,7 @@ Is one of the plugins that servers admin must have on ther server with a lot of 
 ###Note:
 ```
 BoxTool plugin for Your MCPE server.
-     Copyright © 2016 YoungRichNigger & HuaYoyu
+     Copyright © 2016 YoungRichNigger9 & HuaYoyu
 
      This program is free software: you allow recode it,
      Hope that it will be useful for u server,
