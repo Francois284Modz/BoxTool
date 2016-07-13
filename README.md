@@ -20,9 +20,9 @@ Is one of the plugins that servers admin must have on ther server with a lot of 
 | /fly | Lets Player Fly at Survival and Adventure |
 
 #Planned Features:
-- [] /fly
-- [] /afk
-- [] /nick
+- [ ] /fly
+- [ ] /afk
+- [ ] /nick
 - etc.
 
 ###Note:
