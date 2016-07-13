@@ -203,9 +203,9 @@ class fly extends Loader implements CommandExecutor{
 				    }
 				}
             }elseif($sender instanceof Player){
-                if(!$sender->hasPermission("boxofbits" || "boxofbits.fly")){
+                if(!$sender->hasPermission("boxtool" || "boxtool.fly")){
 					$sender->sendMessage(self::PREFIX . TF::DARK_RED . " You do not have permission to run this command!");
-				}elseif($sender->hasPermission("boxofbits" || "boxofbits.fly")){
+				}elseif($sender->hasPermission("boxtool" || "boxtool.fly")){
 				    if(!isset($args[0])){
 				    	if($sender->getAllowFlight()){
                     		$sender->sendMessage(self::PREFIX . TF::AQUA . " Flying Disabled!");
