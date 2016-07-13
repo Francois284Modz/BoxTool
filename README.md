@@ -4,7 +4,9 @@ Is one of the plugins that servers admin must have on ther server with a lot of 
       Requirement:
      * Suppot Minecraft:PE Server version 0.15.x
      * The plugin is compatible with Genisys.
-     * Note : - Having crash/issuse please report bugs here tap [Here](https://github.com/YoungRichNigger9/BoxTool/issues).
+
+###Help Rebort Bug
+- Having crash/issuse please report bugs here tap [Here](https://github.com/YoungRichNigger9/BoxTool/issues).
 
 ##Features:
 | Commands | change |
