@@ -10,14 +10,14 @@ Is one of the plugins that servers admin must have on ther server with a lot of 
 - Having crash/issuse please report bugs tap [Here](https://github.com/YoungRichNigger9/BoxTool/issues).
 
 ##Features:
-| Commands | info |
-| :---: | :---: |
-| /bthelp | show BoxTool command list |
-| /gs | change to Survival mode |
-| /gc | change to Creative mode |
-| /ga | change to Adventure mode |
-| /gsp | change to Spectator mode |
-| /fly | Lets Player Fly at Survival and Adventure |
+| Commands | info | ... |
+| :---: | :---: | :---: |
+| /bthelp | show BoxTool command list | Done |
+| /gs | change to Survival mode | Done |
+| /gc | change to Creative mode | Done |
+| /ga | change to Adventure mode | Done |
+| /gsp | change to Spectator mode | Done |
+| /fly | Lets Player Fly at Survival and Adventure | UnDone |
 
 #Planned Features:
 - [ ] /fly
@@ -40,5 +40,5 @@ BoxTool plugin for Your MCPE server.
 * LastVersion: 0.2
 * You can use our [Gitlab](https://gitlab.com/YoungRichNigger9/BoxTool/blob/master/BoxTool_vBuild_1.phar) or to download this Plugins!
 * You also can go [Here](https://github.com/YoungRichNigger9/BoxTool/releases) to download this plugins. [100%FastUpdate!]
-- Drop the BoxTool plugin latest version into the MCPEServerApp '/plugins' folder. 
+- Drop the BoxTool plugin latest version into the MCPEServerApp `plugins/` folder. 
 - Restart the server,and then the plugin will be loaded :D! 
