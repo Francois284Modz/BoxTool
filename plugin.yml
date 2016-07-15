@@ -22,9 +22,6 @@ commands:
     gmsp:
         usage: /gmsp
         description: Changes gamemode to Spectator
-    fly:
-        usage: "/fly [player]"
-        description: "Lets a player fly in survival or Adventure!"
 permissions:
     boxtool.gms:
         default: op
@@ -38,6 +35,3 @@ permissions:
     boxtool.gmsp:
         default: op
         description: Allows user to use /gmsp
-    boxtool.fly:
-        default: op
-        description: Allows user to use /fly
