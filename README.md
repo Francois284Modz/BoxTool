@@ -19,7 +19,7 @@ Is one of the plugins that servers admin must have on ther server with a lot of 
 #Planned Features:
 - [ ] /fly
 - [ ] /afk
-     - [ ]when u move it will auto off Afk.
+     - [ ] when u move it will auto off Afk.
 - [ ] /nick
 - etc.
 
