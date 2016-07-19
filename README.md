@@ -43,3 +43,7 @@ BoxTool plugin for Your MCPE-server.
 
 ###Note:
 * This plugin has been developed and is only tested with Genisys (https://github.com/iTXTech/Genisys) and has not been tested on any other server software. If you find compatibility issues, please use tap here [issue tracker](https://github.com/YoungRichNigger9/BoxTool/issues) to report them.
+
+###Author:
+- [YoungRishNigger9](https://github.com/YoungRichNigger9)
+- [HuaYoyu](https://github.com/Yoyu666)
