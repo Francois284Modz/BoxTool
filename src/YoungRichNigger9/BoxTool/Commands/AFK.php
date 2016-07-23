@@ -1,5 +1,5 @@
 <?php
-namespace BoxTool\Commands;
+namespace YoungRichNigger9\BoxTool\Commands;
 
 use Boxtool\BaseFiles\BaseAPI;
 use Boxtool\BaseFiles\BaseCommand;
