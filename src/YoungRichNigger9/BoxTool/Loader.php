@@ -95,3 +95,114 @@ class Loader extends PluginBase{
         }
        $this->saveResource("Kits.yml");
         $cfg = $this->getConfig();
+
+        if(!$cfg->exists("version") || $cfg->get("version") !== "0.0.2"){
+            $this->getLogger()->debug(TextFormat::RED . "An invalid config file was found, generating a new one...");
+            rename($this->getDataFolder() . "config.yml", $this->getDataFolder() . "config.yml.old");
+            $this->saveDefaultConfig();
+            $cfg = $this->getConfig();
+        }
+
+        $booleans = ["enable-custom-colors"];
+        foreach($booleans as $key){
+            $value = null;
+            if(!$cfg->exists($key) || !is_bool($cfg->get($key))){
+                switch($key){
+                    // Properties to auto set true
+                    case "safe-afk":
+                        $value = true;
+                        break;
+                    // Properties to auto set false
+                    case "enable-custom-colors":
+                        $value = false;
+                        break;
+                }
+            }
+            if($value !== null){
+                $cfg->set($key, $value);
+            }
+        }
+
+        $integers = ["oversized-stacks", "near-radius-limit", "near-default-radius"];
+        foreach($integers as $key){
+            $value = null;
+            if(!is_numeric($cfg->get($key))){
+                switch($key){
+                    case "auto-afk-kick":
+                        $value = 300;
+                        break;
+                    case "oversized-stacks":
+                        $value = 64;
+                        break;
+                    case "near-radius-limit":
+                        $value = 200;
+                        break;
+                    case "near-default-radius":
+                        $value = 100;
+                        break;
+                }
+            }
+            if($value !== null){
+                $cfg->set($key, $value);
+            }
+        }
+
+        $afk = ["safe", "auto-set", "auto-broadcast", "auto-kick", "broadcast"];
+        foreach($afk as $key){
+            $value = null;
+            $k = $this->getConfig()->getNested("afk." . $key);
+            switch($key){
+                case "safe":
+                case "auto-broadcast":
+                case "broadcast":
+                    if(!is_bool($k)){
+                        $value = true;
+                    }
+                    break;
+                case "auto-set":
+                case "auto-kick":
+                    if(!is_int($k)){
+                        $value = 300;
+                    }
+                    break;
+            }
+            if($value !== null){
+                $this->getConfig()->setNested("afk." . $key, $value);
+            }
+        }
+
+        $updater = ["enabled", "time-interval", "warn-console", "warn-players", "channel"];
+        foreach($updater as $key){
+            $value = null;
+            $k = $this->getConfig()->getNested("updater." . $key);
+            switch($key){
+                case "time-interval":
+                    if(!is_int($k)){
+                        $value = 1800;
+                    }
+                    break;
+                case "enabled":
+                case "warn-console":
+                case "warn-players":
+                    if(!is_bool($k)){
+                        $value = true;
+                    }
+                    break;
+                case "channel":
+                    if(!is_string($k) || ($k !== "stable" && $k !== "beta" && $k !== "development")){
+                        $value = "stable";
+                    }
+            }
+            if($value !== null){
+                $this->getConfig()->setNested("updater." . $key, $value);
+            }
+        }
+    }
+
+    /**
+     * @return BaseAPI
+     */
+    public function getAPI(): BaseAPI{
+        return $this->api;
+    }
+}
